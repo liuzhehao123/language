@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
+
 // 请计算一下Func1中++count语句总共执行了多少次？
 void Func1(int N)
 {
