@@ -23,6 +23,7 @@ void Func1(int N)
 	}
 	printf("%d\n", count);
 }
+// n^2+2*n+10
 
 
 // 计算Func2的时间复杂度？
@@ -40,6 +41,7 @@ void Func2(int N)
 	}
 	printf("%d\n", count);
 }
+// O(n)
 
 
 // 计算Func3的时间复杂度？
@@ -56,6 +58,7 @@ void Func3(int N, int M)
 	}
 	printf("%d\n", count);
 }
+// O(m+n)
 
 
 // 计算Func4的时间复杂度？
@@ -68,10 +71,12 @@ void Func4(int N)
 	}
 	printf("%d\n", count);
 }
+// O(1)
 
 
 // 计算strchr的时间复杂度？
 const char* strchr(const char* str, int character);
+// O(n)
 
 
 // 计算BubbleSort的时间复杂度？
@@ -93,6 +98,9 @@ void BubbleSort(int* a, int n)
 			break;
 	}
 }
+// 等差数列
+// n*(n-1) / 2\
+// O(n^2)
 
 
 // 计算BinarySearch的时间复杂度？
@@ -114,6 +122,10 @@ int BinarySearch(int* a, int n, int x)
 	}
 	return -1;
 }
+// n个数查找x次，每次除以2
+// n/2/2/2/2/...,查找x次除以x个2，即x个2相乘就是n
+// 2^x = n  ——> x = logn
+// O(logn)
 
 
 // 计算阶乘递归Fac的时间复杂度？
@@ -123,6 +135,7 @@ long long Fac(size_t N)
 		return 1;
 	return Fac(N - 1) * N;
 }
+// O(n)
 
 
 // 计算斐波那契递归Fib的时间复杂度？
@@ -132,5 +145,6 @@ long long Fib(size_t N)
 		return 1;
 	return Fib(N - 1) + Fib(N - 2);
 }
+// O(2^n)
 
 
